@@ -1,0 +1,45 @@
+\documentclass[6pt]{article}
+\usepackage{graphicx}
+\usepackage{titlepic} % Handles cover picture positioning
+\usepackage{subfiles}
+\usepackage[
+    paperwidth=105mm,   % Custom page width
+    paperheight=148mm, % Custom page height
+    top=10mm,             % Top margin
+    bottom=13mm,          % Bottom margin
+    left=11mm,            % Left margin
+    right=11mm            % Right margin
+]{geometry}
+
+
+\title{The Lotus-Like Lay Buddhist}
+\author{Bro. Chan Khoon San}
+\titlepic{\includegraphics[width=0.6\textwidth]{img/front_cover_epub_small.jpg}}
+
+\begin{document}
+
+\maketitle
+
+\subfile{src/00_title_page}
+
+\newpage
+\subfile{src/00_front_matter}
+
+\newpage
+\subfile{src/00_preface}
+
+\newpage
+\subfile{src/00_about_the_author}
+
+\newpage
+\tableofcontents
+
+\newpage
+\subfile{src/00_front_quotations}
+
+\newpage
+\subfile{src/01_the_lotus-like_lay_buddhist}
+
+\tableofcontents
+
+\end{document}
