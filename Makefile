@@ -13,6 +13,7 @@ BUILD_DIR := build
 
 # OS-specific commands
 ifeq ($(OS),Windows_NT) # Windows
+	SHELL  := cmd.exe
 	DELCMD := rmdir /S /Q
 else
 	DELCMD := rm -Rf
